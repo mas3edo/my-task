@@ -1,0 +1,53 @@
+.max-w-7xl .container h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.max-w-7xl .container .py-4 {
+  font-size: 22px;
+}
+.max-w-7xl .container svg {
+  margin-top: 16px;
+  margin-bottom: 42px;
+}
+@media (max-width: 768px) {
+  .scroll-btn {
+    display: none;
+  }
+  .max-w-7xl .container h1 {
+    font-size: 24px;
+  }
+  .max-w-7xl .container .py-4 {
+    font-size: 12px;
+  }
+  .max-w-7xl .container svg {
+    width: 250px;
+    height: 12px;
+    margin-top: 16px;
+    margin-bottom: 42px;
+  }
+}
+.card-shape {
+  /* M = نقطة البداية (أعلى اليسار)
+    Q = نقطة التحكم في المنحنى (المنتصف) ثم نقطة النهاية
+  */
+  clip-path: path(
+    "M 15 30 Q 150 0 285 30 Q 300 175 285 320 Q 150 350 15 320 Q 0 175 15 30 Z"
+  );
+
+  /* تنسيقات إضافية للكارت */
+  width: 300px;
+  height: 350px;
+  background-color: #fdfbf0;
+}
+.dish-section {
+}
+.salla {
+  width: 169px;
+  height: 47px;
+  background-color: #ff9924;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28.69px;
+}

@@ -1,0 +1,102 @@
+.c-section .container h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.c-section .container .py-4 {
+  font-size: 22px;
+}
+@media (max-width: 768px) {
+  .c-section .container h1 {
+    font-size: 24px;
+  }
+  .c-section .container .py-4 {
+    font-size: 15px;
+  }
+  .c-section .container svg {
+    width: 250px;
+    height: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+.comment {
+  max-width: 1200px;
+  height: 470px;
+  background-color: #ff9924;
+  border-radius: 200px;
+  padding: 40px;
+}
+.comment .left-side {
+  max-width: 584.55px;
+  height: 398.64px;
+  border-radius: 160px;
+  background-color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+.comment .stars {
+  background-color: #ff9924;
+  color: #fff;
+}
+.comment .left-side .items-start {
+  padding-right: 50px;
+}
+.comment .break {
+  background: var(--main-green);
+  width: 120px;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  left: 577px;
+}
+.comment button img {
+  width: 120px;
+  height: 120px;
+}
+.quto {
+  padding: 9px 50px 0 50px;
+}
+@media (max-width: 768px) {
+  .comment {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    border-radius: 40px;
+    padding: 20px;
+  }
+  .comment .left-side {
+    max-width: 239px;
+    height: 260px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .quto {
+    padding: 9px 32px 0 32px;
+  }
+  [width="143"] {
+    width: 115px;
+    height: 130px;
+    bottom: -20px;
+    left: -10px;
+  }
+  .comment .break {
+    width: 51px;
+    left: 148px;
+    transform: rotate(90deg);
+    top: 408px;
+    right: 0;
+  }
+  .c-section [aria-label="Previous testimonial"] {
+    bottom: -31px;
+    left: 40%;
+  }
+  .c-section [aria-label="Next testimonial"] {
+    bottom: -31px;
+    left: 50%;
+  }
+}

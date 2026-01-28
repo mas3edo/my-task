@@ -1,0 +1,103 @@
+.section h1 {
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+.section p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  padding-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .section h1 {
+    font-size: 28px;
+  }
+  .section p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section h1 {
+    font-size: 32px;
+  }
+  .section p {
+    font-size: 15px;
+  }
+}
+
+.order-btn {
+  display: flex;
+  align-items: center;
+  background: #eb1400;
+  width: 174px;
+  height: 52px;
+  color: #fff;
+  border-radius: 999px;
+  padding: 8px 15px 8px 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.order-btn:hover {
+  background: #ba0000;
+}
+
+.order-btn .order-btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f0e3;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  transition: background 0.3s;
+  margin-right: 16px;
+}
+.order-btn:hover .order-btn-icon {
+  background: #fff;
+}
+@media (max-width: 768px) {
+  .order-btn {
+    width: 123px;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .order-btn .order-btn-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+.section .image-1 {
+  rotate: 0deg;
+  right: 0;
+  top: 50px;
+  position: absolute;
+  height: 351px;
+}
+.section .image-2 {
+  rotate: 0deg;
+  left: 10px;
+  top: 150px;
+  position: absolute;
+  height: 215px;
+}
+.section .image-3 {
+  rotate: 0deg;
+  left: 10px;
+  top: 70px;
+  position: absolute;
+  height: 275px;
+  width: 275px;
+}
+.section .image-4 {
+  rotate: 0deg;
+  left: 25px;
+  bottom: 35px;
+  position: absolute;
+  height: 66px;
+}

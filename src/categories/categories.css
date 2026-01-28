@@ -1,0 +1,126 @@
+.categories-section h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.categories-section .py-4 {
+  font-size: 22px;
+}
+@media (max-width: 768px) {
+  .categories-section h1 {
+    font-size: 24px;
+  }
+  .categories-section .py-4 {
+    font-size: 18px;
+  }
+}
+.categories-section .py-4 + svg {
+  margin-bottom: 16px;
+}
+.categories-section span {
+  color: var(--main-red);
+}
+@media (max-width: 768px) {
+  .categories-section .py-4 {
+    font-size: 14px;
+  }
+  .categories-section svg {
+    width: 250px;
+    height: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .categories-section .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.categories-section .container {
+  flex-wrap: scroll;
+}
+.category-card {
+  min-width: 183px;
+  min-height: 220px;
+  height: 220px;
+  padding: 16px 40px 16px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f2e2;
+  border-radius: 100px 100px 0 0;
+  transition:
+    background-color 0.3s,
+    text-color 0.3s;
+}
+.category-card:hover {
+  background-color: var(--main-green);
+  color: #fff;
+  .category-count {
+    color: #fff;
+  }
+}
+.category-card p {
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: 400;
+}
+.category-card h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.category-scroll-btn {
+  border: none;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  background: var(--main-red);
+}
+
+.category-scroll-btn--left {
+  left: -40px;
+}
+
+.category-scroll-btn--right {
+  right: -40px;
+}
+
+@media (max-width: 768px) {
+  .category-scroll-btn {
+    display: none;
+  }
+  .category-scroll-btn--left {
+    left: -10px;
+  }
+  .category-scroll-btn--right {
+    right: -10px;
+  }
+  .category-card {
+    height: 140px;
+    min-width: 103.68px;
+    min-height: 124px;
+    padding: 9.02px 22.55px 9.02px 22.55px;
+    border-radius: 70.36px 70.36px 0 0;
+    font-size: 12px;
+    gap: 0px;
+  }
+  .category-card p {
+    font-size: 10px;
+  }
+  .category-card h3 {
+    font-size: 12px;
+  }
+}
